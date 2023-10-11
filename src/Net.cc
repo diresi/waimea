@@ -17,6 +17,10 @@
 
 extern "C" {
 #include <X11/Xatom.h>
+
+#ifdef    HAVE_STRING_H
+#  include <string.h>
+#endif // HAVE_STRING_H
 }
 
 #include "Net.hh"

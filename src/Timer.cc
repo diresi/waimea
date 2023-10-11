@@ -15,8 +15,6 @@
 #  include "../config.h"
 #endif // HAVE_CONFIG_H
 
-#include "Timer.hh"
-
 extern "C" {
 #ifdef    HAVE_SIGNAL_H
 #  include <signal.h>
@@ -25,7 +23,14 @@ extern "C" {
 #ifdef    HAVE_UNISTD_H
 #  include <unistd.h>
 #endif // HAVE_UNISTD_H
+
+#ifdef    HAVE_STRING_H
+#  include <string.h>
+#endif // HAVE_STRING_H
 }
+
+#include "Timer.hh"
+
 
 Timer *timer;
 

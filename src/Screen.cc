@@ -43,6 +43,10 @@ extern "C" {
 #ifdef    HAVE_SIGNAL_H
 #  include <signal.h>
 #endif // HAVE_SIGNAL_H
+
+#ifdef    HAVE_STRING_H
+#  include <string.h>
+#endif // HAVE_STRING_H
 }
 
 #include <iostream>

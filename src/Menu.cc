@@ -19,8 +19,6 @@
 #  include "../config.h"
 #endif // HAVE_CONFIG_H
 
-#include "Menu.hh"
-
 extern "C" {
 #ifdef    HAVE_STDIO_H
 #  include <stdio.h>
@@ -29,7 +27,13 @@ extern "C" {
 #ifdef    STDC_HEADERS
 #  include <string.h>
 #endif // STDC_HEADERS
+
+#ifdef    HAVE_STRING_H
+#  include <string.h>
+#endif // HAVE_STRING_H
 }
+
+#include "Menu.hh"
 
 #include <iostream>
 using std::cerr;
